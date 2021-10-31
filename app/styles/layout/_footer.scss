@@ -1,0 +1,50 @@
+#footer {
+  padding: 110px;
+  background-color: $color-navy;
+  .footer-wrap {
+    max-width: 1366px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 120px;
+    .sign-up {
+      .footer-title {
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: bold;
+        margin-bottom: 25px;
+      }
+      button.sign-up {
+        width: 100%;
+        font-size: 16px;
+        line-height: 21px;
+        padding: 14px 0;
+        border-radius: 8px;
+        border: unset;
+        font-weight: 600;
+      }
+    }
+    .social {
+      .logo {
+        margin-bottom: 30px;
+      }
+      .list-social {
+        @include flex(space-between);
+        margin-bottom: 30px;
+      }
+    }
+    .footer-title {
+      font-size: 20px;
+      line-height: 22px;
+      color: $color-white;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .menu-item {
+      font-size: 1rem;
+      line-height: 22px;
+      color: $color-white;
+      margin-bottom: 20px;
+    }
+  }
+}

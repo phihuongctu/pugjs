@@ -1,0 +1,33 @@
+button,
+a {
+  cursor: pointer;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: bold;
+  margin-bottom: 28px;
+  color: $color-navy;
+}
+.subtitle {
+  font-size: 18px;
+  line-height: 24px;
+  max-width: 659px;
+  margin: 0 auto;
+  color: $color-navy;
+}
+.title-small {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  color: $color-navy;
+}
+.content {
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-navy;
+}
+.text-center {
+  text-align: center;
+}

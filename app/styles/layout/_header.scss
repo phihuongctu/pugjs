@@ -1,0 +1,52 @@
+.header-wapper {
+  position: relative;
+  .header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    .main-menu {
+      ul {
+        display: flex;
+        align-items: center;
+        li {
+          font-size: 18px;
+          line-height: 22px;
+          color: $color-navy;
+          font-weight: 600;
+          text-transform: capitalize;
+          & + li:not(.trial) {
+            margin-left: 60px;
+          }
+        }
+        .login {
+          padding: 12px 20px;
+          background-color: $color-white;
+          border-radius: 8px;
+        }
+        .trial {
+          margin-left: 20px;
+          padding: 12px 20px;
+          color: $color-white;
+          background-color: $color-peach;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+  .button-play {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

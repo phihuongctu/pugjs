@@ -1,0 +1,23 @@
+block mixins
+	include ../blocks/mixins
+block vars
+	-title = 'Site'
+
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		title=title
+		meta(name="description", content="")
+		meta(name="keywords", content="")
+		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1.0")
+		link(rel="stylesheet", href="styles/styles.css")
+		link(rel="stylesheet", href="styles/reset.css")
+	block header
+		include ../blocks/header
+	main
+		block container
+			include ../blocks/content
+	block footer
+	include ../blocks/footer
+	include ../blocks/scripts
